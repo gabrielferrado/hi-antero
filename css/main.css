@@ -21,8 +21,8 @@ body {
 }
 
 .image-wrapper {
-  width: 80%;
-  height: 50%;
+  width: 50vh;
+  height: 60%;
   background-image: url("../img/antero_off.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -44,4 +44,14 @@ a > span {
   background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 700px) {
+  .image-wrapper {
+    width: 80%;
+    height: 50%;
+    background-image: url("../img/antero_off.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
