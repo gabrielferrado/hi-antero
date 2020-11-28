@@ -27,11 +27,15 @@
     <div class="text-wrapper">
       <p>Antero está disperso, toque o botão para chamá-lo.</p>
     </div>
-    <a href="#" onclick="changeAntero()"><span>CHAMAR</span></a>
+    <a id="link" href="#" onclick="changeAntero()">
+      <span>CHAMAR</span>
+    </a>
   </div>
   <audio id="audio" src="audio/oi.mp3"></audio>
   <audio id="audio1" src="audio/ei_eu_sou_lesado.mp3"></audio>
   <audio id="audio2" src="audio/tenho_reuniao.mp3"></audio>
+  <div class="balloon height-transition" id="balloon"></div>
+
   <script src="js/main.js"></script>
 </body>
 

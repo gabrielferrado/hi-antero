@@ -4,6 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
   height: 90vh;
   padding: 0;
+  overflow: hidden;
 }
 
 .container {
@@ -28,6 +29,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.balloon {
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  left: 110%;
+  bottom: 0;
+  background-image: url("../img/balloon1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 0.8rem;
+  transition: all .2s ease-in-out;
+}
+
 .image {
   object-fit: fill;
 }
@@ -39,11 +53,17 @@ a {
   text-decoration: none;
   padding: 1rem 2rem;
 }
+
 a > span {
   font-weight: bold;
   background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.disabled {
+  background: #ccc; !important;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 700px) {
